@@ -1,0 +1,18 @@
+# Main part
+jupyterlab
+jupyter_contrib_nbextensions
+xlrd
+telepyth
+psycopg2
+sqlalchemy
+minio
+mlflow
+
+
+# Work with images
+matplotlib
+pillow
+scikit-image
+imageio
+
+opencv-python

@@ -1,0 +1,17 @@
+version: "2.3"
+
+services:
+
+    jupyter:
+        build: .
+        runtime: nvidia
+        ports: 
+            - 8000:8888
+            - 8010:8080
+            - 5000:5000
+        volumes:
+            - ./:/project
+        environment:
+            - JUPYTER_PASSWORD=$JUPYTER_PASSWORD
+            - FAKE_DISPLAY=$FAKE_DISPLAY
+        user: $DOCKER_USER
